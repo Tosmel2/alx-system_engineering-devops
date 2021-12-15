@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-#outputs a sequence 1-10
-for i in $(seq 1 10); do
-    echo Best School
-    ((i++))
+# displays "Best School" 10 times, using the for loop.
+
+for _ in {1..10}
+do
+	echo 'Best School'
 done
