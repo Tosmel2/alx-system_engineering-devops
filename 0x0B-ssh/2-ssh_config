@@ -1,0 +1,6 @@
+Host Tosin
+    HostName 34.74.69.186
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+    PubkeyAuthentication yes
