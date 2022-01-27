@@ -3,5 +3,15 @@
 
 sudo apt-get -y update
 sudo apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.html
-sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://github.com/tosmel2 permanent;" /etc/nginx/sites-enabled/default
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+printf %s "server {
+    listen      80 default_server;
+    listen      [::]:80 default_server;
+    root        /var/www/html;
+    index       index index.html index.htm index.nginx-debian.html;
+    location /redirect_me {
+                return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4/;
+        }
+}
+" > /etc/nginx/sites-available/default
+sudo service nginx restart
