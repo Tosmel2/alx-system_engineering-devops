@@ -3,12 +3,12 @@
 
 sudo apt-get -y update
 sudo apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" > /var/www/html/index.html
 printf %s "server {
     listen      80 default_server;
     listen      [::]:80 default_server;
     root        /var/www/html;
-    index       index index.html index.htm index.nginx-debian.html;
+    index       index.html index.nginx-debian.html;
     location /redirect_me {
                 return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4/;
         }
