@@ -28,3 +28,6 @@ def getData(id):
     with open('{}.json'.format(_id), 'w') as f:
         json.dump(_final, f)
 
+
+if __name__ == '__main__':
+    getData(argv[1])
