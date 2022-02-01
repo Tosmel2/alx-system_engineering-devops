@@ -1,13 +1,13 @@
-<h2> 0x013-firewall </h2>
+<h1> 0x013-firewall </h1>
 Firewall is a A hardware or software security system
 
- <h4>The 2 types of firewall</h4>
+ <h2>The 2 types of firewall</h2>
 	Network and Host-based firewall
 
-<h4> What is the main function of a firewall?</h4>
+<h2> What is the main function of a firewall?</h2>
 	To filter incoming and outgoing network traffic
 
-<h4> Background Context</h4><hr>
+<h2> Background Context</h2>
 <p> As explained in the web stack debugging guide concept page, telnet is a very good tool to check if sockets are open with telnet IP PORT. For example, if you want to check if port 22 is open on web-02:</p>
 
 <p>sylvain@ubuntu$ telnet web-02.holberton.online 22
