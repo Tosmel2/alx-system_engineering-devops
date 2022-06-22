@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 # Debugging apache
-sudo apt install apache2
 sudo service apache2 start
