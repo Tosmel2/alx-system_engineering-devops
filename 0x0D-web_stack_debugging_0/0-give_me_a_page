@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# Debugging apache
 sudo systemctl start apache2
